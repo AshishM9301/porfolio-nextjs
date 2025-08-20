@@ -13,13 +13,14 @@ export default function ProjectCard({ title, imageUrl, description, technologies
   return (
     <div className="mb-12">
       <div className="mb-4">
-        <Image
-          src={imageUrl || "/placeholder.svg"}
-          alt={`${title} screenshot`}
-          width={600}
-          height={400}
-          className="w-full border border-gray-200 dark:border-gray-700 rounded-md"
-        />
+        <div className="relative w-full h-96">
+          <Image
+            src={imageUrl || "/placeholder.svg"}
+            alt={`${title} screenshot`}
+            fill
+            className="w-full border border-gray-200 dark:border-gray-700 rounded-md object-contain"
+          />
+        </div>
       </div>
 
       <div className="mb-2">

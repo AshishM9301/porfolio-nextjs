@@ -19,7 +19,7 @@ export default function Home() {
       company: "Web Spiders (India) Pvt. Ltd",
       location: "Kolkata",
       startDate: "March 2024",
-      endDate: "Present",
+      endDate: "April 2025",
       achievements: [
         "Improved performance and functioning by migrating React Native app from Expo to CLI, increasing user satisfaction by 20%.",
         "Optimized performance in Flutter applications, achieving faster load times and fluid transitions.",
@@ -94,7 +94,7 @@ export default function Home() {
       description:
         "A web app for exploring GitHub profiles. Simply enter a username to retrieve details such as repositories, contributions, and other profile information. Includes a feature to view all stored profiles in the database.",
       technologies: ["ReactJS"],
-      demoUrl: "https://delightful-sable-f99429.netlify.app/",
+      demoUrl: "https://elegant-brattain-b9c01a.netlify.app/",
     },
     {
       title: "GRC - Conference",
@@ -200,6 +200,9 @@ export default function Home() {
             <a href="#skills" className="hover:font-bold">
               Skills
             </a>
+            <a href="#youtube" className="hover:font-bold">
+              Logs
+            </a>
             <a href="#blogs" className="hover:font-bold">
               Blogs
             </a>
@@ -251,6 +254,15 @@ export default function Home() {
             demoUrl={project.demoUrl}
           />
         ))}
+      </section>
+
+      <section id="youtube" className="mb-10 scroll-mt-16">
+        <SectionHeading title="Youtube" />
+        <div className="mb-4">
+          <div className="flex justify-center flex-wrap gap-4 mb-4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLLzugsgRPpFWW4qZfS-QWcI1YPZgl39d1" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+          </div>
+        </div>
       </section>
 
       <section id="skills" className="mb-10 scroll-mt-16">
